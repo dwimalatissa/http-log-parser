@@ -28,6 +28,7 @@ namespace HttpLogParser.Test.LogProcessing
             var result = _httpLogProcessor.CalculateLogMetrics(filePath);
 
             // Assert
+            // TODO Assert response properly
             Assert.AreEqual(23, result.TotalLogEntries, "Total log entry counnts are not equal");
             Assert.AreEqual(11, result.DistrictIpAddresses, "Distinct IP addresses are not equal");
             Assert.AreEqual("168.41.191.40", result.TopIpAddresses[0].Name, "Top IP addresses are not equal");
