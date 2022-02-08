@@ -22,3 +22,7 @@ The project consists of
 Update the "LogPath" value in appsettings.json to point at the folder containing the HTTP log files.
 
 Sample provided here: http-log-parser/src/HttpLogParser/HttpLogParser.Test/TestData/
+
+## Limitations
+
+* Does everything in memory so may not handle large files (out of memory, poor performance, etc)
